@@ -1,0 +1,118 @@
+.container {
+    padding: 60px 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 80px 400px 100px;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer"
+    ;
+
+    gap: 40px
+
+}
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: brown;
+    border-radius: 5px;
+}
+
+.main {
+    grid-area: main;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: darkgreen;
+    border-radius: 5px;
+}
+
+
+
+
+
+.header:hover {
+    transform: scale(1.1);
+    transform: translateX(5%);
+    cursor:pointer
+}
+
+.sidebar:hover {
+    transform: scale(1.1);
+    transform: translateX(5%);
+    cursor:pointer
+}
+
+.main:hover {
+    transform: scale(1.1);
+    transform: translateX(5%);
+    cursor:pointer
+}
+
+.footer:hover {
+    transform: scale(1.1);
+    transform: translateX(5%);
+    cursor:pointer
+}
+
+
+
+
+.header p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+
+}
+
+.sidebar p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+
+}
+
+.main p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+
+}
+
+.footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+
+}
